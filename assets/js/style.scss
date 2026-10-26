@@ -1,0 +1,64 @@
+/* Color Palette Variables */
+:root {
+  --ocean-bg: #0b1329;       /* Deep dark ocean background */
+  --ocean-card: #152238;     /* Slightly lighter ocean surface */
+  --ocean-text: #8fa3bf;     /* Muted blue-gray text */
+  --ocean-white: #e2e8f0;    /* Bright text */
+  --accent-green: #38bdf8;   /* (Or a rich emerald like #10b981) */
+  --accent-yellow: #f59e0b;  /* Muted bonfire yellow */
+}
+
+/* Navbar Container */
+.ocean-navbar {
+  background-color: var(--ocean-bg);
+  border-bottom: 1px solid rgba(143, 163, 191, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Brand / Logo with Muted Bonfire Yellow Accent */
+.nav-brand {
+  color: var(--ocean-white);
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-brand:hover {
+  color: var(--accent-yellow); /* Bonfire yellow highlight on hover */
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: var(--ocean-text);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+/* Green accent on hover for links */
+.nav-links a:hover {
+  color: var(--accent-green);
+}

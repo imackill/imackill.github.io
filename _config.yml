@@ -1,0 +1,11 @@
+title: Iain MacKillop
+email: mackii@rpi.edu
+description: Hi! I'm Iain, I'm a junior at Rensselaer Polytechnic Institute studying physics with a minor in environmental science.
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+sass:
+  style: compressed
